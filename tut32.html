@@ -1,0 +1,78 @@
+<!-- CSS 3D transformations -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            background-color: aqua;
+            
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:1rem;
+        }
+        .items{
+            height: 150px;
+            width: 150px;
+            margin: 2rem;
+            padding: 2rem;
+            background-color: blueviolet;
+            border: 2px dashed black;
+            
+
+        }
+        #rotx:hover{
+            transform: rotateX(60deg);
+        }
+        #roty:hover{
+            transform: rotateY(60deg);
+        }
+        #rotz:hover{
+            transform: rotateZ(60deg);
+        }
+        #trnx:hover{
+            transform: translateX(50px);
+        }
+        #trny:hover{
+            transform: translateY(50px);
+        }
+        #trnz:hover{
+            transform: perspective(300px) translateZ(50px);
+        }
+        #scalex:hover{
+                    transform: scaleX(2);
+        }
+        #scaley:hover{
+                    transform: scaleY(2);
+        }
+        #scalez:hover{
+                    transform:perspective(300px) scaleZ(2) rotateY(30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="rotx">rotx</div>
+        <div class="items" id="roty">rotz</div>
+        <div class="items" id="rotz">roty</div>
+        <div class="items" id="trnx">trnx</div>
+        <div class="items" id="trny">trny</div>
+        <div class="items" id="trnz">trnz</div>
+        <div class="items" id="scalex">scalex</div>
+        <div class="items" id="scaley">scaley</div>
+        <div class="items" id="scalez">scalez</div>
+    </div>
+</body>
+</html>

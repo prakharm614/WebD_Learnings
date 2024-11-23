@@ -1,0 +1,50 @@
+<!-- 2D transitions in HTML -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            border: 2px solid black;
+
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            margin: auto;
+            transition: all 3s linear 1s;
+        }
+        p{
+            font-size: 20px;
+        }
+        .box:hover{
+           /* transform: rotate(45deg);  */
+           /* transform: scale(2); */
+           /* transform: scale(-45deg); */
+           /* transform: skew(30deg); */
+           transform: translate(40px, 50px);
+
+        }
+    </style>
+ </head>
+ <body>
+   <div class="container">
+    <div class="box">
+        <p>
+            This is my box
+        </p>
+</div>
+   </div>
+ </body>
+ </html>

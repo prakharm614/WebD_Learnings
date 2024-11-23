@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid red;
+
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+            /* prop 1 */
+            box-sizing: border-box; 
+        }
+        .box{
+             width: 300px; 
+             height: 300px;
+             border: 2px solid rgb(62, 11, 214);
+               /* adding padding after apply prop 1 of box sizing  */
+               padding: 30px;
+        }
+        span{
+            border: 2px solid green;
+            width: 800px;
+            height: 400px;
+            margin: 40px;
+            /* converting to block */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div>
+        this is first div
+    </div>
+    <div>
+        this is second div
+    </div> -->
+    <div class="box">
+        This is my box
+    </div>
+    <span>This is first  span</span>
+    <span>this is second span</span>
+</body>
+</html>

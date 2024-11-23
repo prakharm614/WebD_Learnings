@@ -1,0 +1,95 @@
+<!-- GRid autofit and grid template areas -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        height: 100%;
+        width: 100%;
+    }
+    /* .container{
+        width: 100%;
+        height: 100%;
+        padding: 3rem;
+        display: grid;
+        gap: 1rem;
+        background-color: aqua;
+        /* grid-template-columns: repeat(3,1fr); 
+
+        grid-template-columns: repeat(auto-fit,minmax(200px,500px));
+        justify-content: center ;
+    }
+    .item{
+        border: 3px solid black;
+        padding: 1rem;
+        background-color: blueviolet;
+    }  */
+   #item1{
+    grid-area: item1;
+   }
+   #item2{
+    grid-area: item2;
+   }
+   #item3{
+    grid-area: item3;
+   }
+   #item4{
+    grid-area: item4;
+   }
+   #item5{
+    grid-area: item5;
+   }
+   #item6{
+    grid-area: item6;
+   }
+    .container{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        gap: 1rem;
+        background-color: aqua;
+        padding: 4rem;
+        grid-template-areas:
+            "item1 item1 item1"
+            "item2 item3 item3"
+            "item2 item4 item5"
+            "item6 item6 item6"
+            ;
+    }
+    .item{
+        background-color: blueviolet;
+        border: 2px dashed black;
+        padding: 1rem;
+    }
+   
+   </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"  id="item1">A</div>
+        <div class="item" id="item2">B</div>
+        <div class="item" id="item3">C</div>
+        <div class="item" id="item4">D</div>
+        <div class="item" id="item5">E</div>
+       <div class="item" id="item6">F</div>
+        <!--  <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+        <div class="item">N</div>
+        <div class="item">O</div>
+        <div class="item">P</div> -->
+    </div>
+</body>
+</html>

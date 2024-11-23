@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            border: 3px solid yellow;
+            background-color:aqua ;
+        }
+        /* relative % */
+        .child{
+            border: 2px dashed green;
+            background-color: beige;
+            width: 50%;
+        }
+        .container{
+            border: 2px dashed red;
+            background-color: bisque;
+            height: 40vh;
+            width: 70vw;
+        }
+        .box1{
+            border: 1px solid black;
+            font-size: 70px;
+        }
+        .box2 {
+  font-size: 1em;
+}
+
+.px {
+  width: 200px;
+}
+
+.vw {
+  width: 10vw;
+}
+
+.em {
+  width: 10em;
+}
+.box3{
+    border: 2px dashed blue;
+    font-size: 2rem;
+}
+    </style>
+</head>
+<body>
+   <div class="parent">
+    <div class="child">
+        This is tutorial 18
+    </div>
+   </div>
+   <div class="container">
+    This is demo for vw and vh
+   </div>
+   <div class="box1">
+    This is demo of pixels
+   </div>
+   <div class="box2">  
+    <div class="box px">I am 200px wide</div>
+   <div class="box vw">I am 10vw wide</div>
+   <div class="box em">I am 10em wide</div>
+ 
+   </div>
+   <p class="box3"> This is for rem
+    16(def)*5(rem) px
+   </p>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         :root{
+            --primary-color:brown;
+            --custom-width:250px;
+        }
+        .container{
+            border: 2px solid black;
+            background-color: beige;
+            height: 650px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            border: 2px dashed red;
+            background-color: plum;
+            /* width: 230px; */
+
+            width: var(--custom-width);
+
+            height: 330px;
+            margin: 20px;
+            padding: 40px;
+            /* box-shadow: 20px 15px greenyellow; */
+       
+            
+            /* box-shadow: 20px 15px 10px greenyellow; */
+
+            
+            box-shadow:inset 20px 15px greenyellow;
+        }
+        #text1{
+            text-shadow: 1px 2px orangered;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="Screenshot 2024-05-18 133301.png" alt="image" width="120px">
+            <h2 id="text1">Welcome to page</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi expedita impedit modi culpa? Quisquam distinctio quas voluptas beatae amet facere ipsa doloribus ullam rerum alias.</p>
+        
+        </div>
+    </div>
+</body>
+</html>
