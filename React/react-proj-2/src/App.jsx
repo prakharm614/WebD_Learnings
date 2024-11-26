@@ -1,12 +1,12 @@
 
-import  usercard  from './components/usercard';
+import Usercard from "./components/Usercard";
 
 function App() {
     return (
-        <div>
-            <usercard />
-            <usercard />
-            <usercard />
+        <div className="cards-container">
+            <Usercard username="Prakhar" desc="About Prakhar" />
+            <Usercard username="Mohan" desc="About Mohan" />
+            <Usercard  username="Rohan" desc="About Rohan" />
         </div>
     );
 }

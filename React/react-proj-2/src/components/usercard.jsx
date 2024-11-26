@@ -1,15 +1,16 @@
 import React from 'react'
 import gj from '../assets/gj.jpeg'
-const usercard = () => {
+import './usercard.css';
+const Usercard = (props) => {
   return (
     <div className='usercontainer'>
       <p id='username'>
-        Prakhar Mishra
+       {props.username}
       </p>
       <img id='userimage' src={gj} alt="myphoto" />
-      <p id='userdes'>Description about me</p>
+      <p id='userdes'>{props.desc}</p>
     </div>
   )
 }
 
-export default usercard
+export default Usercard
