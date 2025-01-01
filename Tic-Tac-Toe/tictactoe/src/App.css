@@ -1,0 +1,75 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+}
+
+/* Title styling */
+.title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Board styling */
+.board {
+    margin: 0 auto; /* Center the board horizontally */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between rows */
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Drop shadow */
+}
+
+/* Row styling */
+.row {
+    display: flex;
+    gap: 10px; /* Space between blocks */
+}
+
+/* Styles for individual blocks */
+.block {
+    border: 3px solid #4c56af; /* Green border */
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: #333; /* Text color */
+    background-color: #f9f9f9; /* Light background */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for blocks */
+.block:hover {
+    background-color: #e0ffe0; /* Subtle green on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hover shadow effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .block {
+        height: 80px;
+        width: 80px;
+        font-size: 28px;
+    }
+
+    .board {
+        padding: 15px;
+    }
+}
