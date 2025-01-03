@@ -1,5 +1,5 @@
 import './App.css';
-import Block from './compo/block';
+import Block from './compo/Block';
 import { useState } from 'react';
 function App() {
   const [state, setState] = useState(Array(9).fill(null));
